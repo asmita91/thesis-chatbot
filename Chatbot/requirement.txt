@@ -1,0 +1,10 @@
+requests
+django
+djangorestframework
+openai
+pymongo
+django-cors-headers
+minio
+pytz
+groq
+python-dotenv
