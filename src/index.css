@@ -11,3 +11,236 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* RegistrationPage.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden; /* Prevent scrolling on the body */
+}
+
+.registration-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.info-box {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #ece4f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70%; /* Set height to 100% to match the parent flex container */
+}
+.registration-container {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70%; /* Set height to 100% to match the parent flex container */
+}
+
+.registration-page > *:first-child {
+  margin-right: -1px; /* Overlap the borders */
+  border-radius: 8px 0 0 8px; /* Round the left corners */
+}
+
+.registration-page > *:last-child {
+  margin-left: -1px; /* Overlap the borders */
+  border-radius: 0 8px 8px 0; /* Round the right corners */
+}
+
+.info-box h2, .registration-container h2 {
+  margin-top: 0;
+  color: #5d5479; /* Dark purple for heading */
+}
+
+.info-box p {
+  color: #333; /* Grey for text for better readability */
+}
+
+.registration-form .form-group {
+  margin-bottom: 15px;
+}
+
+.registration-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #5d5479; /* Dark purple for labels */
+}
+
+.registration-form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.register-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #5d5479; /* Dark purple background */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.register-button:hover {
+  background-color: #4c3a6b; /* Slightly lighter purple on hover */
+}
+
+@media (max-width: 768px) {
+  .registration-page {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .info-box, .registration-container {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Reset border radius for stacked layout */
+  }
+}
+
+@media (max-width: 480px) {
+  .info-box h2, .registration-container h2 {
+    font-size: 18px; /* Smaller font size for headings on smaller screens */
+  }
+
+  .registration-form label, .register-button {
+    font-size: 14px; /* Smaller font size for labels and button on smaller screens */
+  }
+}
+/* LoginPage.css */
+
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+ .info-box {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #ece4f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70%; /* Set height to 100% to match the parent flex container */
+}
+.login-container {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70%; /* Set height to 100% to match the parent flex container */
+}
+
+.login-page > *:first-child {
+  margin-right: -1px; /* Overlap the borders */
+  border-radius: 8px 0 0 8px; /* Round the left corners */
+}
+
+.login-page > *:last-child {
+  margin-left: -1px; /* Overlap the borders */
+  border-radius: 0 8px 8px 0; /* Round the right corners */
+}
+
+.login-container h2, .info-box h2 {
+  margin-top: 0;
+  color: #5d5479; /* Dark purple for heading */
+}
+
+.login-container p, .info-box p {
+  color: #333; /* Grey for text for better readability */
+}
+
+.login-form .form-group {
+  margin-bottom: 15px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #5d5479; /* Dark purple for labels */
+}
+
+.login-form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #5d5479; /* Dark purple background */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.login-button:hover {
+  background-color: #4c3a6b; /* Slightly lighter purple on hover */
+}
+
+@media (max-width: 768px) {
+  .login-page {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .login-container, .info-box {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Reset border radius for stacked layout */
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container h2, .info-box h2 {
+    font-size: 18px; /* Smaller font size for headings on smaller screens */
+  }
+
+  .login-form label, .login-button {
+    font-size: 14px; /* Smaller font size for labels and button on smaller screens */
+  }
+}
